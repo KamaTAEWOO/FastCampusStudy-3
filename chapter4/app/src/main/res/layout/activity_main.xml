@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="view"
+            type="com.example.chapter4.MainActivity"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mvcButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> view.openMvc()}"
+            android:text="MVC" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mvpButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="@{() -> view.openMvp()}"
+            android:text="MVP" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mvvmButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="@{() -> view.openMvvm()}"
+            android:text="MVVM" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mviButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="@{() -> view.openMvi()}"
+            android:text="MVI" />
+
+    </LinearLayout>
+</layout>
+
+<!--    android:onClick="@{() -> view.openMvi()}"-->
